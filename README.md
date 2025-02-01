@@ -1,5 +1,5 @@
 # DevSecOps Project Diagram
-```mermaidjoshua.
+```mermaid
 flowchart LR
     A[GitHub Repos] --> B{CI/CD Pipeline GH Actions}
     B --> C[SAST]
@@ -17,3 +17,4 @@ flowchart LR
     L --> M[Reporting and Notifications]
     M --> N[Development Team]
     M --> O[Security Team]
+    
