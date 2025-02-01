@@ -59,4 +59,3 @@ resource "aws_s3_bucket" "terraform-nov-project23" {
 
 
 
-

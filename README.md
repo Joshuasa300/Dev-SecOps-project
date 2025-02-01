@@ -1,5 +1,5 @@
 # DevSecOps Project Diagram
-```mermaid
+```mermaidjoshua.
 flowchart LR
     A[GitHub Repos] --> B{CI/CD Pipeline GH Actions}
     B --> C[SAST]
