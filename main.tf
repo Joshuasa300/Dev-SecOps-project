@@ -1,5 +1,5 @@
 ## Introduction
-This security document outlines a DevSecOps project implementation incorporating Static Application Security Testing (SAST), Software Composition Analysis (SCA), and Infrastructure as Code (IaC) scanning best practices on applications running within AWS infrastrcuture, utilising GitHub Actions with workflows
+- This security document outlines a DevSecOps project implementation incorporating Static Application Security Testing (SAST), Software Composition Analysis (SCA), and Infrastructure as Code (IaC) scanning best practices on applications running within AWS infrastrcuture, utilising GitHub Actions with workflows
 ## Project Goal
 - Implement security measures throughout the software development lifecycle, creating a Secure Software Development Life Cycle (SSDLC).
 - Automate security testing to identify vulnerabilities early in the development process, shifting security left.
@@ -17,7 +17,7 @@ SAST involves analyzing the application's source code or binary code without exe
 #### Tools:
 - **CodeQl**: Provides static code analysis to identify bugs, vulnerabilities, and code smells in various programming languages.
 ### 3. Software Composition Analysis (SCA)
-SCA focuses on identifying and managing open-source components and third-party libraries used in the application. It helps in detecting known vulnerabilities in dependencies.
+- SCA focuses on identifying and managing open-source components and third-party libraries used in the application. It helps in detecting known vulnerabilities in dependencies.
 #### Tools:
 - **Trivy**: Scans project dependencies and identifies vulnerabilities based on the National Vulnerability Database (NVD) and other sources.
 1. **Integration with CI/CD Pipeline**: Incorporate SAST, SCA, and IaC scanning tools into the CI/CD pipeline to automate security testing.
