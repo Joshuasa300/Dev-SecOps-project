@@ -28,7 +28,6 @@ SCA focuses on identifying and managing open-source components and third-party l
 ## Conclusion
 By integrating SAST, SCA, and IaC scanning practices into the DevSecOps pipeline, the project aims to enhance the security posture of the running applications in AWS, reducing vulnerabilities, and ensure compliance throughout the software development lifecycle.
 # DevSecOps Project Diagram mermaid flowchart LR
-
     A[GitHub Repos] --> B{CI/CD Pipeline GH Actions}
     B --> C[SAST]
     B --> D[SCA]
@@ -49,10 +48,20 @@ By integrating SAST, SCA, and IaC scanning practices into the DevSecOps pipeline
 provider "aws" {
   region = "eu-west-2" # London region
 }
-resource "aws_s3_bucket" "terraform-nov-project23" {
-  bucket = "terraform-nov-project23"
+resource "aws_s3_bucket" "joshuabucketforproject" {
+  bucket = "joshuabucketforproject"
   }
 
+
+
+terraform {
+  backend "s3" {
+    #  bucket name!
+    bucket         = "joshuabucketforproject"
+    key            = "global/s3/terraform.tfstate"
+    region         = "eu-west-2"
+  }
+}
 
 
 
