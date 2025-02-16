@@ -15,10 +15,6 @@ terraform {
     key            = "global/s3/terraform.tfstate"
     region         = "eu-north-1"
   }
-
-
-  terraform import aws_s3_bucket.joshuabucketforproject joshuabucketforproject
-
 }
 
 
