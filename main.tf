@@ -27,9 +27,7 @@ SCA focuses on identifying and managing open-source components and third-party l
 5. **Reporting and Notifications**: Generate detailed reports on security findings and send notifications to relevant stakeholders for prompt remediation.
 ## Conclusion
 By integrating SAST, SCA, and IaC scanning practices into the DevSecOps pipeline, the project aims to enhance the security posture of the running applications in AWS, reducing vulnerabilities, and ensure compliance throughout the software development lifecycle.
-# DevSecOps Project Diagram
-```mermaid
-flowchart LR
+# DevSecOps Project Diagram mermaid flowchart LR
     A[GitHub Repos] --> B{CI/CD Pipeline GH Actions}
     B --> C[SAST]
     B --> D[SCA]
