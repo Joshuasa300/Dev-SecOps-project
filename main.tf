@@ -1,6 +1,6 @@
 
 provider "aws" {
-  region = "eu-west-2" # London region
+  region = "eu-north-1" # London region
 }
 resource "aws_s3_bucket" "joshuabucketforproject" {
   bucket = "joshuabucketforproject"
@@ -13,7 +13,7 @@ terraform {
     #  bucket name!
     bucket         = "joshuabucketforproject"
     key            = "global/s3/terraform.tfstate"
-    region         = "eu-west-2"
+    region         = "eu-north-1"
   }
 }
 
