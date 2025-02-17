@@ -34,7 +34,7 @@ jobs:
           scanners: 'misconfig'
           scan-ref: '.'
           hide-progress: false
-          format: 'json'        # Changed from 'table' to 'json'
+          format: 'table'        # Changed from 'table' to 'json'
           output: 'trivy-results.json'  # Added to save results to a file
           ignore-unfixed: true
-          severity: 'CRITICAL,HIGH,MEDIUM'
+          severity: 'CRITICAL,HIGH,MEDIUM,LOW'
